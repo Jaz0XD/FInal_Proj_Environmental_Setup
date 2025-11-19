@@ -1,6 +1,4 @@
 def calculate_area(points):
-    # Assuming points is a list of (x, y) tuples
-    # Using the shoelace formula to calculate area
     n = len(points)
     area = 0.0
     for i in range(n):
@@ -11,7 +9,6 @@ def calculate_area(points):
     return area
 
 def calculate_perimeter(points):
-    # Assuming points is a list of (x, y) tuples
     perimeter = 0.0
     n = len(points)
     for i in range(n):
@@ -20,7 +17,6 @@ def calculate_perimeter(points):
     return perimeter
 
 def calculate_volume(points, depth):
-    # Assuming points is a list of (x, y) tuples and depth is a float
     area = calculate_area(points)
     volume = area * depth
     return volume
